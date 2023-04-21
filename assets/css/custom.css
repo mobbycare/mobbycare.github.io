@@ -1,0 +1,18 @@
+.text-gradient.text-primary {
+    background-image: linear-gradient(310deg, #464E2E, #ACB992);
+}
+
+.bg-gradient-primary {
+    background-image: linear-gradient(310deg, #464E2E 0%, #ACB992 100%);
+}
+.bg-gradient-primary.active {
+    background-image: linear-gradient(310deg, #362706 0%, #464E2E 100%);
+}
+
+.navbar-vertical .navbar-nav>.nav-item .nav-link.active .icon {
+    background-image: linear-gradient(310deg, #362706 0%, #464E2E 100%);
+}
+
+.navbar-vertical.navbar-expand-xs .navbar-collapse {
+    height: calc(100vh - 0px);
+}
