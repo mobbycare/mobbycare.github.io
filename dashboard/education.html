@@ -235,11 +235,37 @@
       <div class="row mt-4">
         <div class="col-12">
           <div class="card mb-4">
-            <div class="card-header pb-0">
+            <div class="card-header pb-0 p-3">
               <h6>Edukasi</h6>
             </div>
-            <div class="card-body pt-0 pb-2">
-              Content...
+            <div class="card-body p-3">
+              <ol type="A" class="text-dark">
+                <li>Ibu Hamil</li>
+                <ul style="list-style-type: disc;">
+                    <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#periksaKehamilan">Periksa kehamilan</a></li>
+                    <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#ikutKelasIbuHamil">Ikut kelas ibu hamil</a></li>
+                    <li><a href="#">Perawatan sehari-hari ibu hamil</a></li>
+                    <li><a href="#">Yang harus dihindari ibu selama hamil</a></li>
+                    <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#porsiMakanMinumIbuHamil">Porsi makan dan minum ibu hamil untuk kebutuhan sehari-hari</a></li>
+                    <li><a href="#">Tanda bahaya pada kehamilan</a></li>
+                    <li><a href="#">Masalah lain pada masa kehamilan</a></li>
+                    <li><a href="#">Penting TTD</a></li>
+                </ul>
+                <li>Ibu Bersalin</li>
+                <ul style="list-style-type: disc;">
+                    <li><a href="#">Persiapan melahirkan (bersalin)</a></li>
+                    <li><a href="#">Proses melahirkan</a></li>
+                    <li><a href="#">Tanda bahaya persalinan</a></li>
+                </ul>
+                <li>Ibu Nifas</li>
+                <ul style="list-style-type: disc;">
+                    <li><a href="#">Depresi pada melahirkan</a></li>
+                    <li><a href="#">Perawatan ibu nifas</a></li>
+                    <li><a href="#">Hal-hal yang harus dihindari oleh ibu bersalin dan selama nifas</a></li>
+                    <li><a href="#">Tanda bahaya pada ibu nifas</a></li>
+                    <li><a href="#">Keluarga Berencana</a></li>
+                </ul>
+              </ol>
             </div>
           </div>
         </div>
@@ -265,7 +291,7 @@
       <i class="fa fa-cog py-2"> </i>
     </a>
     <div class="card shadow-lg ">
-      <div class="card-header pb-0 pt-3 ">
+      <div class="card-header pb-0 p-3 pt-3 ">
         <div class="float-start">
           <h5 class="mt-3 mb-0">Pengaturan</h5>
         </div>
@@ -294,182 +320,205 @@
       </div>
     </div>
   </div>
+
+  <!-- Begin::Modal Periksa Kehamilan -->
+    <div class="modal fade" id="periksaKehamilan" tabindex="-1" aria-labelledby="periksaKehamilanLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="periksaKehamilanLabel">Periksa Kehamilan</h1>
+            <i class="fa fa-close" aria-hidden="true" data-bs-dismiss="modal" style="cursor: pointer;"></i>
+          </div>
+          <div class="modal-body">
+            <p>Segera ke dokter atau bidan jika terlambat datang bulan. Periksa kehamilan minimal 6 kali selama kehamilan dan minimal 2 x pemeriksaan oleh dokter pada trimester 1 dan 3</p>
+            <ul>
+              <li>2 kali pada trimester pertama (kehamilan hingga 12 minggu)</li>
+              <li>1 kali pada trimester kedua (kehamilan diatas 12 minggu sampai 24 minggu)</li>
+              <li>3 kali pada trimester ketiga (kehamilan diatas 24 minggu sampai 40 minggu)</li>
+            </ul>
+            <p>Pastikan ibu hamil mendapatkan pelayanan pemeriksaan kehamilan yang meliputi;</p>
+            <ol type="1">
+              <li>Timbang berat badan dan ukur tinggi badan</li>
+              <ul style="list-style-type: disc;">
+                <li>Tinggi badan ibu untuk menentukan status gizi</li>
+                <li>Minimal BB naik sebanyak 9 kg atau 1 kg setiap bulannya</li>
+              </ul>
+              <li>Ukur tekanan darah</li>
+              <ul style="list-style-type: disc;">
+                <li>Tekanan darah > 140/90 mmHg (Hipertensi)</li>
+              </ul>
+              <li>Nilai status gizi (ukur Lingkar Lengan Atas/LILA)</li>
+              <ul style="list-style-type: disc;">
+                <li>LILA < 23,5 cm, risiko KEK (Kurang Energi Kronis)</li>
+              </ul>
+              <li>Ukur tinggi fundus uteri / tinggi rahim</li>
+              <li>Tentukan presentasi janin dan denjut jantung janin (DJJ)</li>
+              <ul style="list-style-type: disc;">
+                <li>Untuk melihat kelainan letak janin, atau masalah lain</li>
+              </ul>
+              <li>Skrining status imuniasasi tetanus dan berikan imunisasi tetanus bila diperlukan</li>
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr class="text-center table-primary">
+                      <th>Status T</th>
+                      <th>Interval Minimal Pemberian</th>
+                      <th>Masa Perlindungan</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center">T 1</td>
+                      <td class="text-center"></td>
+                      <td style="white-space: normal;">Langkah awal pembentukan kekebalan tubuh terhadap penyakit Tetanus</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">T 2</td>
+                      <td class="text-center">1 bulan setelah T 1</td>
+                      <td>3 Tahun</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">T 3</td>
+                      <td class="text-center">6 bulan setelah T 2</td>
+                      <td>5 Tahun</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">T 4</td>
+                      <td class="text-center">12 bulan setelah T 3</td>
+                      <td>10 Tahun</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">T 5</td>
+                      <td class="text-center">12 bulan setelah T 4</td>
+                      <td>Lebih dari 25 tahun</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <li>Beri tablet tambah darah</li>
+              <ul style="list-style-type: disc;">
+                <li>Ibu mendapatkan minimal 90 tablet selama kehamilan</li>
+              </ul>
+              <li>Tes / periksa labolatorium</li>
+              <ul style="list-style-type: disc;">
+                <li>Pemeriksaan labolatorium</li>
+              </ul>
+              <li>Tata laksana / penanganan kasus</li>
+              <ul style="list-style-type: disc;">
+                <li>Apabila ditemukan masalah, segera ditangani atau dirujuk</li>
+              </ul>
+              <li>Temu wicara / konseling</li>
+              <ul style="list-style-type: disc;">
+                <li>Dilakukan pada saat ibu melakukan pemeriksaan kehamilan</li>
+              </ul>
+            </ol>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- End::Modal Periksa Kehamilan -->
+  <!-- Begin::Modal Ikut Kelas Ibu Hamil -->
+    <div class="modal fade" id="ikutKelasIbuHamil" tabindex="-1" aria-labelledby="ikutKelasIbuHamilLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="ikutKelasIbuHamilLabel">Ikut Kelas Ibu Hamil</h1>
+            <i class="fa fa-close" aria-hidden="true" data-bs-dismiss="modal" style="cursor: pointer;"></i>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img src="../assets/media/ikut-kelas-ibu-hamil.jpg" class="img-fluid" alt="ikut-kelas-ibu-hamil">
+            </div>
+            <p>Dengan mengikuti kelas ibu hamil akan diperoleh informasi tentang kehamilan, persalinan, perawatan masa nifas, perawatan bayi baru lahir, kebutuhan dan pemenuhan gizi serta pelayanan kesehatan yang diterima. Ibu harus mengikuti kelas ibu hamil dan minimal 1 kali diikuti oleh suami.</p>
+            <p><b>Tanyakan pada petugas kesehatan jadwal dan tempat pelaksanaan Kelas Ibu</b></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- End::Modal Ikut Kelas Ibu Hamil -->
+  <!-- Begin::Modal Porsi Makan & Minum Ibu Hamil -->
+    <div class="modal fade" id="porsiMakanMinumIbuHamil" tabindex="-1" aria-labelledby="porsiMakanMinumIbuHamilLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="porsiMakanMinumIbuHamilLabel">Porsi Makan & Minum Ibu Hamil untuk Kebutuhan Sehari</h1>
+            <i class="fa fa-close" aria-hidden="true" data-bs-dismiss="modal" style="cursor: pointer;"></i>
+          </div>
+          <div class="modal-body">
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr class="text-center table-info">
+                    <th>Bahan Makanan</th>
+                    <th>Ibu Hamil Trimester 1</th>
+                    <th>Ibu Hamil Trimester 2 dan 3</th>
+                    <th>Keterangan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Nasi atau makanan pokok</td>
+                    <td class="text-center">5 porsi</td>
+                    <td class="text-center">6 porsi</td>
+                    <td>1 porsi = 100 gr atau ¾ gelas nasi</td>
+                  </tr>
+                  <tr>
+                    <td style="white-space: normal;">Protein hewani seperti : ikan, telur, ayam, dan lainnya</td>
+                    <td class="text-center">4 porsi</td>
+                    <td class="text-center">4 porsi</td>
+                    <td style="white-space: normal;">1 porsi = 50 gr atau 1 potong sedang ikan<br>1 porsi = 55 gr atau 1 butir telur ayam</td>
+                  </tr>
+                  <tr>
+                    <td style="white-space: normal;">Protein nabati seperti: tempe, tahu, dan lainnya</td>
+                    <td class="text-center">4 porsi</td>
+                    <td class="text-center">4 porsi</td>
+                    <td style="white-space: normal;">1 porsi = 50 gr atau 1 potong sedang tempe<br>1 porsi = 100 gr atau 2 potong tahu sedang</td>
+                  </tr>
+                  <tr>
+                    <td>Buah-buahan</td>
+                    <td class="text-center">4 porsi</td>
+                    <td class="text-center">4 porsi</td>
+                    <td style="white-space: normal;">1 porsi = 100 gr atau 1 potong sedang pisang<br>1 porsi = 100-190 gr atau 1 potong besar pepaya</td>
+                  </tr>
+                  <tr>
+                    <td>Minyak/lemak</td>
+                    <td style="white-space: normal;" class="text-center">5 porsi<br>Minyak/lemak termasuk santan yang digunakan dalam pengolahan, makanan digoreng, ditumis atau dimasak dengan santan</td>
+                    <td style="white-space: normal;" class="text-center">5 porsi<br>Minyak/lemak termasuk santan yang digunakan dalam pengolahan, makanan digoreng, ditumis atau dimasak dengan santan</td>
+                    <td style="white-space: normal;">1 porsi = 5 gr atau 1 sendok teh, bersumber dari pengolahan makanan seperti menggoreng, menumis santan, kemiri, mentega dan sumber lemak lainnya</td>
+                  </tr>
+                  <tr>
+                    <td>Gula</td>
+                    <td class="text-center">2 porsi</td>
+                    <td class="text-center">2 porsi</td>
+                    <td style="white-space: normal;">1 porsi = 10 gr atau 1 sendok makan bersumber dari kue-kue manis, minum teh manis dan lain-lainnya.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><b>Minum air putih : 8-12 gelas per hari</b></p>
+            <p><b>Catatan :</b></p>
+            <p>Konsultasikan porsi makan kepada tenaga kesehatan, perhatikan indeks massa tubuh</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- End::Modal Porsi Makan & Minum Ibu Hamil -->
+  
   <!--   Core JS Files   -->
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
-  <script src="../assets/js/plugins/chartjs.min.js"></script>
-  <script>
-    var ctx = document.getElementById("chart-bars").getContext("2d");
-
-    new Chart(ctx, {
-      type: "bar",
-      data: {
-        labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-        datasets: [{
-          label: "Sales",
-          tension: 0.4,
-          borderWidth: 0,
-          borderRadius: 4,
-          borderSkipped: false,
-          backgroundColor: "#fff",
-          data: [450, 200, 100, 220, 500, 100, 400, 230, 500],
-          maxBarThickness: 6
-        }, ],
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            display: false,
-          }
-        },
-        interaction: {
-          intersect: false,
-          mode: 'index',
-        },
-        scales: {
-          y: {
-            grid: {
-              drawBorder: false,
-              display: false,
-              drawOnChartArea: false,
-              drawTicks: false,
-            },
-            ticks: {
-              suggestedMin: 0,
-              suggestedMax: 500,
-              beginAtZero: true,
-              padding: 15,
-              font: {
-                size: 14,
-                family: "Open Sans",
-                style: 'normal',
-                lineHeight: 2
-              },
-              color: "#fff"
-            },
-          },
-          x: {
-            grid: {
-              drawBorder: false,
-              display: false,
-              drawOnChartArea: false,
-              drawTicks: false
-            },
-            ticks: {
-              display: false
-            },
-          },
-        },
-      },
-    });
-
-
-    var ctx2 = document.getElementById("chart-line").getContext("2d");
-
-    var gradientStroke1 = ctx2.createLinearGradient(0, 230, 0, 50);
-
-    gradientStroke1.addColorStop(1, 'rgba(203,12,159,0.2)');
-    gradientStroke1.addColorStop(0.2, 'rgba(72,72,176,0.0)');
-    gradientStroke1.addColorStop(0, 'rgba(203,12,159,0)'); //purple colors
-
-    var gradientStroke2 = ctx2.createLinearGradient(0, 230, 0, 50);
-
-    gradientStroke2.addColorStop(1, 'rgba(20,23,39,0.2)');
-    gradientStroke2.addColorStop(0.2, 'rgba(72,72,176,0.0)');
-    gradientStroke2.addColorStop(0, 'rgba(20,23,39,0)'); //purple colors
-
-    new Chart(ctx2, {
-      type: "line",
-      data: {
-        labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-        datasets: [{
-            label: "Mobile apps",
-            tension: 0.4,
-            borderWidth: 0,
-            pointRadius: 0,
-            borderColor: "#cb0c9f",
-            borderWidth: 3,
-            backgroundColor: gradientStroke1,
-            fill: true,
-            data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
-            maxBarThickness: 6
-
-          },
-          {
-            label: "Websites",
-            tension: 0.4,
-            borderWidth: 0,
-            pointRadius: 0,
-            borderColor: "#3A416F",
-            borderWidth: 3,
-            backgroundColor: gradientStroke2,
-            fill: true,
-            data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
-            maxBarThickness: 6
-          },
-        ],
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            display: false,
-          }
-        },
-        interaction: {
-          intersect: false,
-          mode: 'index',
-        },
-        scales: {
-          y: {
-            grid: {
-              drawBorder: false,
-              display: true,
-              drawOnChartArea: true,
-              drawTicks: false,
-              borderDash: [5, 5]
-            },
-            ticks: {
-              display: true,
-              padding: 10,
-              color: '#b2b9bf',
-              font: {
-                size: 11,
-                family: "Open Sans",
-                style: 'normal',
-                lineHeight: 2
-              },
-            }
-          },
-          x: {
-            grid: {
-              drawBorder: false,
-              display: false,
-              drawOnChartArea: false,
-              drawTicks: false,
-              borderDash: [5, 5]
-            },
-            ticks: {
-              display: true,
-              color: '#b2b9bf',
-              padding: 20,
-              font: {
-                size: 11,
-                family: "Open Sans",
-                style: 'normal',
-                lineHeight: 2
-              },
-            }
-          },
-        },
-      },
-    });
-  </script>
+  
   <script>
     var win = navigator.platform.indexOf('Win') > -1;
     if (win && document.querySelector('#sidenav-scrollbar')) {
