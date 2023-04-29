@@ -16,3 +16,15 @@
 .navbar-vertical.navbar-expand-xs .navbar-collapse {
     height: calc(100vh - 0px);
 }
+
+.alert-primary {
+    background-image: linear-gradient(310deg, #E9E5D6 0%, #464E2E 100%);
+}
+
+.alert-secondary {
+    background-image: linear-gradient(310deg, #ACB992 0%, #362706 100%);
+}
+
+.card-bg-custom {
+    background-color: #DAE2B6 !important;
+}
